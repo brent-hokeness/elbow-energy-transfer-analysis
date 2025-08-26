@@ -50,10 +50,10 @@ def query_shoulder_elbow_data():
     # Now query shoulder angle data for these specific trials
     session_trials = df['session_trial'].tolist()
     
-    if len(session_trials) > 1000:
-        print(f"Large dataset ({len(session_trials)} trials). Taking first 1000 for analysis.")
-        session_trials = session_trials[:1000]
-        df = df.head(1000).copy()
+    if len(session_trials) > 5000:
+        print(f"Large dataset ({len(session_trials)} trials). Taking first 5000 for analysis.")
+        session_trials = session_trials[:5000]
+        df = df.head(5000).copy()
     
     shoulder_data = query_shoulder_angles(db, session_trials, df)
     
