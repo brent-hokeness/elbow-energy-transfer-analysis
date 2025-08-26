@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Consolidated Elbow Energy Transfer Kinematic Analysis
 
